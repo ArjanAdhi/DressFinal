@@ -1,0 +1,39 @@
+.register-container {
+    background: linear-gradient(135deg, #87CEEB, #EB8784);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.register-container h1 {
+    margin: 0 0 20px 0;
+}
+.input {
+    width: 250px;
+    height: 40px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.button {
+    width: 250px;
+    height: 40px;
+    background-color: #5cf3ee;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.message {
+    margin-top: 10px;
+    color: black;
+}
+.link {
+    margin-top: 20px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}

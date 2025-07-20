@@ -1,0 +1,66 @@
+.admin-container {
+    background: linear-gradient(135deg, #87CEEB, #EB8784);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.admin-header {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.admin-welcome {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.admin-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.admin-button {
+    width: 250px;
+    height: 40px;
+    background-color: #5cf3ee;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-button:hover {
+    background-color: #3498db;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: #fff;
+    color: #000;
+}
+
+.user-table th,
+.user-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.user-table th {
+    background-color: #dddddd;
+}

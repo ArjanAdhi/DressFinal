@@ -1,0 +1,19 @@
+import sqlite3
+
+conn = sqlite3.connect("database.db")
+cursor = conn.cursor()
+username = "admin"
+email = "admin@admin.com"
+password = hashlib.sha256("adminpassword".encode()).hexdigest()
+role = "admin"
+cursor.execute(""""
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT UNIQUE,
+    username TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL
+    role TEXT DEFAULT 'user'
+    );
+""")
+conn.commit()
+conn.close()
